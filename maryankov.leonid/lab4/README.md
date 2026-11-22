@@ -12,9 +12,9 @@
 
 ## Реализация
 
-- `model.js` — класс `Game` и функции `groupGamesByYear`, `getUniquePlatforms`,
-  `getGamesByPlatform`, `groupGamesByPlatformCount`, `getGamesAfterYear`.
-  Входные массивы не изменяются.
+- `model.js` — класс `Game` и функции `groupGamesByReleaseYear`,
+  `getUniquePlatforms`, `findGamesByPlatform`, `groupGamesByPlatformCount`,
+  `findGamesReleasedAfter`. Входные массивы не изменяются.
 - `main.js` — интерфейс: отрисовка карточек, обработчики формы и кнопок,
   асинхронные операции добавления и удаления (`Promise` + `setTimeout`),
   сохранение и восстановление списка из `localStorage`.

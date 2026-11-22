@@ -20,7 +20,7 @@ export class Game {
   }
 }
 
-export function groupGamesByYear(games) {
+export function groupGamesByReleaseYear(games) {
   const result = {};
   for (const game of games) {
     if (!result[game.releaseYear]) {
@@ -41,7 +41,7 @@ export function getUniquePlatforms(games) {
   return [...platforms];
 }
 
-export function getGamesByPlatform(games, platform) {
+export function findGamesByPlatform(games, platform) {
   return games.filter((game) => game.platforms.includes(platform));
 }
 
@@ -57,6 +57,6 @@ export function groupGamesByPlatformCount(games) {
   return result;
 }
 
-export function getGamesAfterYear(games, year) {
+export function findGamesReleasedAfter(games, year) {
   return games.filter((game) => game.releaseYear > year);
 }
